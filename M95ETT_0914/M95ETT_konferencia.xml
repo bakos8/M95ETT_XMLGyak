@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<konferencia>
+    <cim>Miskolci Egyetem</cim>
+
+    <hallgatok>
+        <hallgato>
+            <nev>Istvan</nev>
+            <lakcim>Miskolc, Bab utca 6.</lakcim>
+        </hallgato>
+        <hallgato>
+            <nev>Bela</nev>
+            <lakcim>Miskolc, Orso utca 8.</lakcim>
+        </hallgato>
+    </hallgatok>
+
+    <helyszin>Miskolc Egyetemvaros</helyszin>
+
+    <eloado>
+        <nev>Marton</nev>
+        <adoszam>335921202-2-26</adoszam>
+        <lakcim>Miskolc, Dio ut 33.</lakcim>
+    </eloado>
+
+    <datum>2022. 10. 04.</datum>
+</konferencia>

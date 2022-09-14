@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<M95ETT_orarend>
+    <ora id="01" tipus="eloadas">
+        <targy>Adatkezeles XML kornyezetbe</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>12:00</tol>
+            <ig>14:00</ig>
+        </idopont>
+        <helyszin>XXXII. eloado</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>GE-BP</szak>
+    </ora>
+
+    <ora id="02" tipus="gyakorlat">
+        <targy>Adatkezeles XML kornyezetbe</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>12:00</tol>
+            <ig>14:00</ig>
+        </idopont>
+        <helyszin>Inf. 101</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>GE-BP</szak>
+    </ora>
+
+     <ora id="03" tipus="eloadas">
+        <targy>Vallalati informacios rendszerek fejlesztese</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>16:00</tol>
+            <ig>18:00</ig>
+        </idopont>
+        <helyszin>Inf. 103</helyszin>
+        <oktato>Dr. Sasvári Péter László</oktato>
+        <szak>GE-BP</szak>
+    </ora>
+
+    <ora id="04" tipus="gyakorlat">
+        <targy>Vallalati informacios rendszerek fejlesztese</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>18:00</tol>
+            <ig>20:00</ig>
+        </idopont>
+        <helyszin>Inf. 103</helyszin>
+        <oktato>Dr. Sasvári Péter László</oktato>
+        <szak>GE-BP</szak>
+    </ora>
+</M95ETT_orarend>
