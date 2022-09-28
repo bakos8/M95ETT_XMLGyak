@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT A (Ab*, Ac)>
+    <!ATTLIST A Aa ID #REQUIRED>
+    <!ELEMENT Ab (Abx, Aby)>
+        <!ELEMENT Abx (#PCDATA)>
+        <!ELEMENT Aby (#PCDATA)>
+    <!ELEMENT Ac (Acd, Ace)>
+        <!ELEMENT Acd (#PCDATA)>
+        <!ELEMENT Ace (#PCDATA)>
+
+<!ELEMENT B (Bb)>
+    <!ATTLIST B Ba ID #REQUIRED>
+    <!ELEMENT Bb (Bbx, Bby)>
+        <!ELEMENT Bbx (#PCDATA)>
+        <!ELEMENT Bby (#PCDATA)>
+
+<!ELEMENT C (Cb)>
+    <!ATTLIST C Ca ID #REQUIRED>
+    <!ELEMENT Cb (#PCDATA)>
+
+<!ELEMENT AB (ABc)>
+    <!ATTLIST AB ABc IDREF #IMPLIED>
+    <!ATTLIST AB ABb IDREF #IMPLIED>
+    <!ELEMENT ABc (#PCDATA)>
