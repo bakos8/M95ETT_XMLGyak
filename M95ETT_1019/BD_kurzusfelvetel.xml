@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BD_kurzusfelvetel tanev="2022_2023 I." egyetem="ME">
+
+    <hallgato id="M95ETT">
+        <hnev>Bakos Dominik</hnev>
+        <szulev>1999-10-21</szulev>
+        <szak evf="7">Programtervezo informatikus</szak>
+    </hallgato>
+
+    <kurzusok>
+        <kurzus id="GEIAL332-B">
+            <kurzusnev>Adatkezeles XML kornyezetben</kurzusnev>
+            <kredit>5</kredit>
+            <hely>XXXII.</hely>
+            <idopont>Kedd 12:00-13:30</idopont>
+            <oktato>Dr. Bednarik László</oktato>
+        </kurzus>
+
+        <kurzus id="GEIAL332-B" jovahagyas="igen">
+            <kurzusnev>Vallalati informacios rendszerek fejlesztese</kurzusnev>
+            <kredit>5</kredit>
+            <hely>Inf. 103</hely>
+            <idopont>Szerda 16:00-17:30</idopont>
+            <oktato>Dr. Sasvári Péter László</oktato>
+        </kurzus>
+    </kurzusok>
+
+</BD_kurzusfelvetel>
