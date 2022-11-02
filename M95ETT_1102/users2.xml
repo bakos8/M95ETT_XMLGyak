@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<users xmlns="DOMM95ETT">
+    <user firstName="Dominik" id="1" lastName="Bakos" profession="Software engineer"/>
+    <user firstName="Bence" id="2" lastName="Bakos" profession="Software developer"/>
+    <user firstName="Pal" id="3" lastName="Lakatos" profession="Web developer"/>
+</users>
