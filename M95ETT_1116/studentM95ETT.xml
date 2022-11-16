@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<class>
+    <student id="01">
+        <vezetkenev>Bakos</vezetkenev>
+        <keresztnev>Dominik</keresztnev>
+        <becenev>Bakos</becenev>
+        <kor>23</kor>
+        <osztondij>17500</osztondij>
+    </student>
+
+    <student id="01">
+        <vezetkenev>Eross</vezetkenev>
+        <keresztnev>Istvan</keresztnev>
+        <becenev>Pisti</becenev>
+        <kor>21</kor>
+        <osztondij>12000</osztondij>
+    </student>
+
+    <student id="01">
+        <vezetkenev>Magyar</vezetkenev>
+        <keresztnev>Balint</keresztnev>
+        <becenev>Balu</becenev>
+        <kor>24</kor>
+        <osztondij>18500</osztondij>
+    </student>
+</class>
