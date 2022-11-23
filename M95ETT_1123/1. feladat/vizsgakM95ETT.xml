@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+  <_id>M95ETT</_id>
+  <vizsgak>
+    <vizsga>
+      <kurzus>Optimalizálás</kurzus>
+      <helyszin>XXXVII-es előadó</helyszin>
+      <idopont>
+        <nap>Csutörtök</nap>
+        <tol>10</tol>
+        <ig>12</ig>
+      </idopont>
+      <oktato>Dr. Körei Attila</oktato>
+      <jegy>2</jegy>
+    </vizsga>
+    <vizsga>
+      <kurzus>Gazdasági és pénzügyi modellek</kurzus>
+      <helyszin>A/1 214</helyszin>
+      <idopont>
+        <nap>Csutörtök</nap>
+        <tol>12</tol>
+        <ig>14</ig>
+      </idopont>
+      <oktato>Dr. Fegyverneki Sándor</oktato>
+      <jegy>3</jegy>
+    </vizsga>
+    <vizsga>
+      <kurzus>Web technológiák 2</kurzus>
+      <helyszin>Inf 102</helyszin>
+      <idopont>
+        <nap>Péntek</nap>
+        <tol>8</tol>
+        <ig>10</ig>
+      </idopont>
+      <oktato>Agárdi Anita</oktato>
+      <jegy>5</jegy>
+    </vizsga>
+  </vizsgak>
+</root>

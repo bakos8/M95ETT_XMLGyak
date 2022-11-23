@@ -1,0 +1,40 @@
+{
+    "_id": "M95ETT",
+    "vizsgak": {
+        "vizsga": [
+            {
+                "kurzus": "Optimalizálás",
+                "helyszin": "XXXVII-es előadó",
+                "idopont": {
+                    "nap": "Csutörtök",
+                    "tol": 10,
+                    "ig": 12
+                },
+                "oktato": "Dr. Körei Attila",
+                "jegy": 2
+            },
+            {
+                "kurzus": "Gazdasági és pénzügyi modellek",
+                "helyszin": "A/1 214",
+                "idopont": {
+                    "nap": "Csutörtök",
+                    "tol": 12,
+                    "ig": 14
+                },
+                "oktato": "Dr. Fegyverneki Sándor",
+                "jegy": 3
+            },
+            {
+                "kurzus": "Web technológiák 2",
+                "helyszin": "Inf 102",
+                "idopont": {
+                    "nap": "Péntek",
+                    "tol": 8,
+                    "ig": 10
+                },
+                "oktato": "Agárdi Anita",
+                "jegy": 5
+            }
+        ]
+    }
+}

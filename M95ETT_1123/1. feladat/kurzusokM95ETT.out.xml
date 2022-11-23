@@ -1,0 +1,27 @@
+<!DOCTYPE HTML><html>
+   <body>
+      <h2>Kurzusok atlaga - for-each, value-of</h2>
+      <table border="4">
+         <tr bgcolor="#9acd32">
+            <th>Kurzus</th>
+            <th>Atlag</th>
+         </tr>
+         <tr>
+            <td>Optimalizálás</td>
+            <td>2</td>
+         </tr>
+         <tr>
+            <td>Gazdasági és pénzügyi modellek</td>
+            <td>3</td>
+         </tr>
+         <tr>
+            <td>Web technológiák 2</td>
+            <td>5</td>
+         </tr>
+         <tr>
+            <td>A felev atlaga</td>
+            <td>3.3333333333333335</td>
+         </tr>
+      </table>
+   </body>
+</html>
