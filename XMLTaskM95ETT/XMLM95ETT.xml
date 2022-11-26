@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Ablakgyar xsi:noNamespaceSchemaLocation="./XMLSchemaM95ETT.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <!-- Üvegek példányosítása -->
+    <Uvegek>
+        <Uveg uvegID="145">
+            <Retegszam>
+                <Haromreteg>2</Haromreteg>
+                <Otreteg>1</Otreteg>
+            </Retegszam>
+            <Hofolia>3</Hofolia>
+            <rendelesszam_fk>182</rendelesszam_fk>
+        </Uveg>
+
+        <Uveg uvegID="146">
+            <Retegszam>
+                <Haromreteg>0</Haromreteg>
+                <Otreteg>4</Otreteg>
+            </Retegszam>
+            <Hofolia>2</Hofolia>
+            <rendelesszam_fk>185</rendelesszam_fk>
+        </Uveg>
+
+        <Uveg uvegID="147">
+            <Retegszam>
+                <Haromreteg>5</Haromreteg>
+                <Otreteg>5</Otreteg>
+            </Retegszam>
+            <Hofolia>3</Hofolia>
+            <rendelesszam_fk>186</rendelesszam_fk>
+        </Uveg>
+    </Uvegek>
+
+    <!-- Beépítések példányosítása -->
+    <Beepitesek>
+        <Beepites beepID="034">
+            <Datum>2022.06.15</Datum>
+            <Szakember>2</Szakember>
+        </Beepites>
+
+        <Beepites beepID="035">
+            <Datum>2022.07.23</Datum>
+            <Szakember>2</Szakember>
+        </Beepites>
+
+        <Beepites beepID="036">
+            <Datum>2022.08.10</Datum>
+            <Szakember>4</Szakember>
+        </Beepites>
+    </Beepitesek>
+
+    <!-- Rendelések példányosítása -->
+    <Rendelesek>
+        <Rendeles rendelesszam="182">
+            <Rendeles_datum>2022.05.11</Rendeles_datum>
+            <Megrendelo>
+                <KapcsoaltfelvetelDatum>2022.05.12</KapcsoaltfelvetelDatum>
+                <Nev>Horváth Pálné</Nev>
+                <Telepules>Maklár</Telepules>
+            </Megrendelo>
+        </Rendeles>
+
+        <Rendeles rendelesszam="185">
+            <Rendeles_datum>2022.06.20</Rendeles_datum>
+            <Megrendelo>
+                <KapcsoaltfelvetelDatum>2022.04.27</KapcsoaltfelvetelDatum>
+                <Nev>Kiss Béla</Nev>
+                <Telepules>Miskolc</Telepules>
+            </Megrendelo>
+        </Rendeles>
+
+        <Rendeles rendelesszam="186">
+            <Rendeles_datum>2022.07.26</Rendeles_datum>
+            <Megrendelo>
+                <KapcsoaltfelvetelDatum>2022.06.02</KapcsoaltfelvetelDatum>
+                <Nev>Nagy Lajos</Nev>
+                <Telepules>Kisköre</Telepules>
+            </Megrendelo>
+        </Rendeles>
+    </Rendelesek>
+
+    <!-- Profilok példányosítása -->
+    <Profilok>
+        <Profil profilID="003">
+            <Meret>120</Meret>
+            <Anyag>
+                <Muanyag>3</Muanyag>
+                <Fa>0</Fa>
+                <Aluminium>0</Aluminium>
+            </Anyag>
+            <rendelesszam_fk>182</rendelesszam_fk>
+        </Profil>
+
+        <Profil profilID="008">
+            <Meret>90</Meret>
+            <Anyag>
+                <Muanyag>2</Muanyag>
+                <Fa>2</Fa>
+                <Aluminium>0</Aluminium>
+            </Anyag>
+            <rendelesszam_fk>185</rendelesszam_fk>
+        </Profil>
+
+        <Profil profilID="012">
+            <Meret>140</Meret>
+            <Anyag>
+                <Muanyag>5</Muanyag>
+                <Fa>4</Fa>
+                <Aluminium>1</Aluminium>
+            </Anyag>
+            <rendelesszam_fk>186</rendelesszam_fk>
+        </Profil>
+    </Profilok>
+
+    <!-- Párkányok példányosítása -->
+    <Parkanyok>
+        <Parkany parkanyID="005">
+            <Hossz>120</Hossz>
+            <Szelesseg>35</Szelesseg>
+        </Parkany>
+
+        <Parkany parkanyID="013">
+            <Hossz>90</Hossz>
+            <Szelesseg>50</Szelesseg>
+        </Parkany>
+
+        <Parkany parkanyID="017">
+            <Hossz>140</Hossz>
+            <Szelesseg>40</Szelesseg>
+        </Parkany>
+    </Parkanyok>
+
+    <!-- Anyagok példányosítása -->
+    <Anyagok>
+        <Anyag>
+            <parkanyID_fk>005</parkanyID_fk>
+            <profilID_fk>003</profilID_fk>
+            <AzonosSzin>Igen</AzonosSzin>
+        </Anyag>
+
+        <Anyag>
+            <parkanyID_fk>013</parkanyID_fk>
+            <profilID_fk>008</profilID_fk>
+            <AzonosSzin>Nem</AzonosSzin>
+        </Anyag>
+
+        <Anyag>
+            <parkanyID_fk>017</parkanyID_fk>
+            <profilID_fk>012</profilID_fk>
+            <AzonosSzin>Igen</AzonosSzin>
+        </Anyag>
+    </Anyagok>
+</Ablakgyar>

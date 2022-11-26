@@ -1,0 +1,143 @@
+Root Element: Ablakgyar
+-------------------------
+
+Kategoria: Uvegek
+-------------------------
+
+  Uveg
+-------------------------
+    Retegszam
+  Haromreteg: 2
+  Otreteg: 1
+  Hofolia: 3
+  rendelesszam_fk: 182
+
+  Uveg
+-------------------------
+    Retegszam
+  Haromreteg: 0
+  Otreteg: 4
+  Hofolia: 2
+  rendelesszam_fk: 185
+
+  Uveg
+-------------------------
+    Retegszam
+  Haromreteg: 5
+  Otreteg: 5
+  Hofolia: 3
+  rendelesszam_fk: 186
+
+Kategoria: Beepitesek
+-------------------------
+
+  Beepites
+-------------------------
+  Datum: 2022.06.15
+  Szakember: 2
+
+  Beepites
+-------------------------
+  Datum: 2022.07.23
+  Szakember: 2
+
+  Beepites
+-------------------------
+  Datum: 2022.08.10
+  Szakember: 4
+
+Kategoria: Rendelesek
+-------------------------
+
+  Rendeles
+-------------------------
+  Rendeles_datum: 2022.05.11
+    Megrendelo
+  KapcsoaltfelvetelDatum: 2022.05.12
+  Nev: Horváth Pálné
+  Telepules: Maklár
+
+  Rendeles
+-------------------------
+  Rendeles_datum: 2022.06.20
+    Megrendelo
+  KapcsoaltfelvetelDatum: 2022.04.27
+  Nev: Kiss Béla
+  Telepules: Miskolc
+
+  Rendeles
+-------------------------
+  Rendeles_datum: 2022.07.26
+    Megrendelo
+  KapcsoaltfelvetelDatum: 2022.06.02
+  Nev: Nagy Lajos
+  Telepules: Kisköre
+
+Kategoria: Profilok
+-------------------------
+
+  Profil
+-------------------------
+  Meret: 120
+    Anyag
+  Muanyag: 3
+  Fa: 0
+  Aluminium: 0
+  rendelesszam_fk: 182
+
+  Profil
+-------------------------
+  Meret: 90
+    Anyag
+  Muanyag: 2
+  Fa: 2
+  Aluminium: 0
+  rendelesszam_fk: 185
+
+  Profil
+-------------------------
+  Meret: 140
+    Anyag
+  Muanyag: 5
+  Fa: 4
+  Aluminium: 1
+  rendelesszam_fk: 186
+
+Kategoria: Parkanyok
+-------------------------
+
+  Parkany
+-------------------------
+  Hossz: 120
+  Szelesseg: 35
+
+  Parkany
+-------------------------
+  Hossz: 90
+  Szelesseg: 50
+
+  Parkany
+-------------------------
+  Hossz: 140
+  Szelesseg: 40
+
+Kategoria: Anyagok
+-------------------------
+
+  Anyag
+-------------------------
+  parkanyID_fk: 005
+  profilID_fk: 003
+  AzonosSzin: Igen
+
+  Anyag
+-------------------------
+  parkanyID_fk: 013
+  profilID_fk: 008
+  AzonosSzin: Nem
+
+  Anyag
+-------------------------
+  parkanyID_fk: 017
+  profilID_fk: 012
+  AzonosSzin: Igen

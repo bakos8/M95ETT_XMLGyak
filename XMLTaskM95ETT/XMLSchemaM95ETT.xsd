@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified">
+    <xs:element name="Ablakgyar">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="Uvegek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Uveg" type="UvegTipus" minOccurs="0" maxOccurs="unbounded" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Beepitesek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Beepites" type="BeepitesTipus" minOccurs="0" maxOccurs="unbounded" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Rendelesek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Rendeles" type="RendelesTipus" minOccurs="0" maxOccurs="unbounded" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Profilok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Profil" type="ProfilTipus" minOccurs="0" maxOccurs="unbounded" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Parkanyok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Parkany" type="ParkanyTipus" minOccurs="0" maxOccurs="unbounded" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Anyagok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Anyag" type="AnyagTipus" minOccurs="0" maxOccurs="unbounded" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+
+        <xs:key name="rendelesszam_fk">
+            <xs:selector xpath="Rendelesek/Rendeles" />
+            <xs:field xpath="@rendelesszam" />
+        </xs:key>
+
+        <xs:key name="profilID_fk">
+            <xs:selector xpath="Profilok/Profil" />
+            <xs:field xpath="@profilID" />
+        </xs:key>
+
+        <xs:key name="parkanyID_fk">
+            <xs:selector xpath="Parkanyok/Parkany" />
+            <xs:field xpath="@parkanyID" />
+        </xs:key>
+
+        <xs:keyref name="rendelesszam_fk-Uveg" refer="rendelesszam_fk">
+            <xs:selector xpath="Uvegek/Uveg/rendelesszam_fk" />
+            <xs:field xpath="." />
+        </xs:keyref>
+
+        <xs:keyref name="rendelesszam_fk-Profil" refer="rendelesszam_fk">
+            <xs:selector xpath="Profilok/Profil/rendelesszam_fk" />
+            <xs:field xpath="." />
+        </xs:keyref>
+
+        <xs:keyref name="profilID_fk-Anyag" refer="profilID_fk">
+            <xs:selector xpath="Anyagok/Anyag/profilID_fk" />
+            <xs:field xpath="." />
+        </xs:keyref>
+
+        <xs:keyref name="parkanyID_fk-Anyag" refer="parkanyID_fk">
+            <xs:selector xpath="Anyagok/Anyag/parkanyID_fk" />
+            <xs:field xpath="." />
+        </xs:keyref>
+
+    </xs:element>
+
+    <xs:complexType name="UvegTipus">
+        <xs:sequence>
+            <xs:element name="Retegszam" type="retegTipus" />
+            <xs:element name="Hofolia" type="xs:string" />
+            <xs:element name="rendelesszam_fk" type="xs:integer" />
+        </xs:sequence>
+        <xs:attribute name="uvegID" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                    <xs:pattern value="[0-9][0-9][0-9]" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="BeepitesTipus">
+        <xs:sequence>
+            <xs:element name="Datum" type="xs:string" />
+            <xs:element name="Szakember" type="xs:string" />
+        </xs:sequence>
+        <xs:attribute name="beepID" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                    <xs:pattern value="[0-9][0-9][0-9]" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="RendelesTipus">
+        <xs:sequence>
+            <xs:element name="Rendeles_datum" type="xs:string" />
+            <xs:element name="Megrendelo" type="megrendeloTipus" />
+        </xs:sequence>
+        <xs:attribute name="rendelesszam" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                    <xs:pattern value="[0-9][0-9][0-9]" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="ProfilTipus">
+        <xs:sequence>
+            <xs:element name="Meret" type="xs:int" />
+            <xs:element name="Anyag" type="anyagTipus" />
+            <xs:element name="rendelesszam_fk" type="xs:int"></xs:element>
+        </xs:sequence>
+        <xs:attribute name="profilID" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                    <xs:pattern value="[0-9][0-9][0-9]" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="ParkanyTipus">
+        <xs:sequence>
+            <xs:element name="Hossz" type="xs:int" />
+            <xs:element name="Szelesseg" type="xs:int" />
+        </xs:sequence>
+        <xs:attribute name="parkanyID" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                    <xs:pattern value="[0-9][0-9][0-9]" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="AnyagTipus">
+        <xs:sequence>
+            <xs:element name="parkanyID_fk" type="xs:int" />
+            <xs:element name="profilID_fk" type="xs:int" />
+            <xs:element name="AzonosSzin" type="xs:string"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="retegTipus">
+        <xs:sequence>
+            <xs:element name="Haromreteg" type="xs:int" />
+            <xs:element name="Otreteg" type="xs:int" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="megrendeloTipus">
+        <xs:sequence>
+            <xs:element name="KapcsoaltfelvetelDatum" type="xs:string" />
+            <xs:element name="Nev" type="xs:string" />
+            <xs:element name="Telepules" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="anyagTipus">
+        <xs:sequence>
+            <xs:element name="Muanyag" type="xs:int" />
+            <xs:element name="Fa" type="xs:int" />
+            <xs:element name="Aluminium" type="xs:int" />
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
