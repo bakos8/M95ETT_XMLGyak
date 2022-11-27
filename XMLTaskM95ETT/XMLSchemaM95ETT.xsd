@@ -76,6 +76,11 @@
             <xs:field xpath="." />
         </xs:keyref>
 
+        <xs:keyref name="rendelesszam_fk-Beepites" refer="rendelesszam_fk">
+            <xs:selector xpath="Beepitesek/Beepites/rendelesszam_fk" />
+            <xs:field xpath="." />
+        </xs:keyref>
+
         <xs:keyref name="rendelesszam_fk-Profil" refer="rendelesszam_fk">
             <xs:selector xpath="Profilok/Profil/rendelesszam_fk" />
             <xs:field xpath="." />
@@ -112,6 +117,7 @@
         <xs:sequence>
             <xs:element name="Datum" type="xs:string" />
             <xs:element name="Szakember" type="xs:string" />
+            <xs:element name="rendelesszam_fk" type="xs:integer" />
         </xs:sequence>
         <xs:attribute name="beepID" use="required">
             <xs:simpleType>
