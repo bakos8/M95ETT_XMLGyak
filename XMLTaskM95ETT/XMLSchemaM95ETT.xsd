@@ -56,20 +56,20 @@
             </xs:sequence>
         </xs:complexType>
 
-        <xs:key name="rendelesszam_fk">
+        <xs:unique name="rendelesszam_fk">
             <xs:selector xpath="Rendelesek/Rendeles" />
             <xs:field xpath="@rendelesszam" />
-        </xs:key>
+        </xs:unique>
 
-        <xs:key name="profilID_fk">
+        <xs:unique name="profilID_fk">
             <xs:selector xpath="Profilok/Profil" />
             <xs:field xpath="@profilID" />
-        </xs:key>
+        </xs:unique>
 
-        <xs:key name="parkanyID_fk">
+        <xs:unique name="parkanyID_fk">
             <xs:selector xpath="Parkanyok/Parkany" />
             <xs:field xpath="@parkanyID" />
-        </xs:key>
+        </xs:unique>
 
         <xs:keyref name="rendelesszam_fk-Uveg" refer="rendelesszam_fk">
             <xs:selector xpath="Uvegek/Uveg/rendelesszam_fk" />
